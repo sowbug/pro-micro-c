@@ -84,7 +84,7 @@ F 3 "~" H 8200 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Regulator_Linear:MIC5219-3.3YM5 U2
+L Regulator_Linear:MIC5219-5.0YM5 U2
 U 1 1 5E51FF13
 P 2000 1500
 F 0 "U2" H 2000 1842 50  0000 C CNN
@@ -545,14 +545,14 @@ F 3 "~" H 1200 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle J1
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5E643A5D
-P 1250 3500
-F 0 "J1" H 1357 4767 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1357 4676 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1400 3500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 3500 50  0001 C CNN
-	1    1250 3500
+P 1050 3100
+F 0 "J1" H 1157 4367 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1157 4276 50  0000 C CNN
+F 2 "keycad:USB_C_Receptacle_HRO_TYPE-C-31-M-14" H 1200 3100 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 3100 50  0001 C CNN
+	1    1050 3100
 	1    0    0    -1  
 $EndComp
 Text GLabel 2100 2500 2    50   Input ~ 0
@@ -583,10 +583,6 @@ F 3 "~" H 2300 3300 50  0001 C CNN
 	1    2300 3300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1700 3000 1850 3000
-Wire Wire Line
-	1700 3300 1850 3300
 Text GLabel 4750 2900 0    50   Input ~ 0
 D-
 Text GLabel 4750 2800 0    50   Input ~ 0
@@ -606,8 +602,6 @@ F 3 "" H 1250 5400 50  0001 C CNN
 	1    1250 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 5100 1250 5400
 Text GLabel 4650 5050 2    50   Input ~ 0
 A0
 Text GLabel 4650 4950 2    50   Input ~ 0
@@ -745,8 +739,6 @@ F 4 "C261935" H 800 950 50  0001 C CNN "LCSC"
 	1    800  950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 2500 1850 2500
 Text GLabel 950  650  2    50   Input ~ 0
 VBUS
 Wire Wire Line
@@ -825,27 +817,17 @@ Connection ~ 3350 1100
 Wire Wire Line
 	2000 3000 2000 3100
 Wire Wire Line
-	2000 3100 1850 3100
-Wire Wire Line
 	2000 3300 2000 3200
-Wire Wire Line
-	2000 3200 1850 3200
 Wire Wire Line
 	2650 3000 2450 3000
 Wire Wire Line
 	2650 3300 2450 3300
 Wire Wire Line
 	2150 3300 2000 3300
-Wire Wire Line
-	2000 3300 1850 3300
 Connection ~ 2000 3300
-Connection ~ 1850 3300
 Wire Wire Line
 	2000 3000 2150 3000
 Connection ~ 2000 3000
-Wire Wire Line
-	1850 3000 2000 3000
-Connection ~ 1850 3000
 $Comp
 L Device:C C6
 U 1 1 5E7CB694
@@ -900,4 +882,20 @@ Wire Wire Line
 Connection ~ 4950 1900
 Wire Wire Line
 	4950 1900 5350 1900
+Wire Wire Line
+	1650 3000 2000 3000
+Wire Wire Line
+	1650 3100 2000 3100
+Wire Wire Line
+	1650 3200 2000 3200
+Wire Wire Line
+	1650 3300 2000 3300
+Wire Wire Line
+	1650 2500 2100 2500
+Wire Wire Line
+	1250 4300 1050 4300
+Wire Wire Line
+	1050 4300 1050 4000
+Wire Wire Line
+	1250 4300 1250 5400
 $EndSCHEMATC

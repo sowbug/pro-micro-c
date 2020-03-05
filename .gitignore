@@ -4,3 +4,5 @@ pro-micro-c-cache.lib
 gui_defaults.par
 pro-micro-c.dsn
 pro-micro-c.ses
+netlist_to_skidl.erc
+netlist_to_skidl.log
