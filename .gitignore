@@ -6,3 +6,5 @@ pro-micro-c.dsn
 pro-micro-c.ses
 netlist_to_skidl.erc
 netlist_to_skidl.log
+pro-micro-c.net
+pro-micro-c.py
