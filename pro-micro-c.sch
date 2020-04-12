@@ -548,8 +548,8 @@ $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5E643A5D
 P 1050 3100
-F 0 "J1" H 1157 4367 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1157 4276 50  0000 C CNN
+F 0 "J1" H 1050 4050 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1050 3900 50  0000 C CNN
 F 2 "keycad:USB_C_Receptacle_HRO_TYPE-C-31-M-14" H 1200 3100 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 3100 50  0001 C CNN
 	1    1050 3100
@@ -557,31 +557,31 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 31
 $EndComp
 Text GLabel 2100 2500 2    50   Input ~ 0
 VBUS
-Text GLabel 2650 3000 2    50   Input ~ 0
+Text GLabel 2450 3750 3    50   Input ~ 0
 D-
-Text GLabel 2650 3300 2    50   Input ~ 0
+Text GLabel 2150 3750 3    50   Input ~ 0
 D+
 $Comp
 L Device:R R5
 U 1 1 5E64DB7D
-P 2300 3000
-F 0 "R5" V 2093 3000 50  0000 C CNN
-F 1 "22" V 2184 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 3000 50  0001 C CNN
-F 3 "~" H 2300 3000 50  0001 C CNN
-	1    2300 3000
-	0    1    1    0   
+P 2450 3150
+F 0 "R5" V 2250 3150 50  0000 C CNN
+F 1 "22" V 2350 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2380 3150 50  0001 C CNN
+F 3 "~" H 2450 3150 50  0001 C CNN
+	1    2450 3150
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E64EB73
-P 2300 3300
-F 0 "R7" V 2093 3300 50  0000 C CNN
-F 1 "22" V 2184 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 3300 50  0001 C CNN
-F 3 "~" H 2300 3300 50  0001 C CNN
-	1    2300 3300
-	0    1    1    0   
+P 2150 3450
+F 0 "R7" V 1943 3450 50  0000 C CNN
+F 1 "22" V 2034 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3450 50  0001 C CNN
+F 3 "~" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	-1   0    0    1   
 $EndComp
 Text GLabel 4750 2900 0    50   Input ~ 0
 D-
@@ -610,9 +610,9 @@ Text GLabel 4650 4850 2    50   Input ~ 0
 A2
 Text GLabel 4650 4750 2    50   Input ~ 0
 A3
-Text GLabel 3500 3800 0    50   Input ~ 0
+Text GLabel 2350 5650 0    50   Input ~ 0
 A4
-Text GLabel 2650 3950 0    50   Input ~ 0
+Text GLabel 2350 5750 0    50   Input ~ 0
 A5
 Text GLabel 2750 5250 0    50   Input ~ 0
 D7
@@ -630,9 +630,9 @@ Text GLabel 2750 4350 0    50   Input ~ 0
 D1
 Text GLabel 2750 4450 0    50   Input ~ 0
 D0
-Text GLabel 2650 5750 0    50   Input ~ 0
+Text GLabel 2650 5850 0    50   Input ~ 0
 D13
-Text GLabel 3550 3700 0    50   Input ~ 0
+Text GLabel 2650 5750 0    50   Input ~ 0
 D12
 Text GLabel 2750 5350 0    50   Input ~ 0
 D8
@@ -819,14 +819,8 @@ Wire Wire Line
 Wire Wire Line
 	2000 3300 2000 3200
 Wire Wire Line
-	2650 3000 2450 3000
-Wire Wire Line
-	2650 3300 2450 3300
-Wire Wire Line
 	2150 3300 2000 3300
 Connection ~ 2000 3300
-Wire Wire Line
-	2000 3000 2150 3000
 Connection ~ 2000 3000
 $Comp
 L Device:C C6
@@ -898,4 +892,56 @@ Wire Wire Line
 	1050 4300 1050 4000
 Wire Wire Line
 	1250 4300 1250 5400
+$Comp
+L Device:R R8
+U 1 1 5E9340B0
+P 2850 2700
+F 0 "R8" V 2643 2700 50  0000 C CNN
+F 1 "5K1" V 2734 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2780 2700 50  0001 C CNN
+F 3 "~" H 2850 2700 50  0001 C CNN
+	1    2850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E9352CD
+P 2600 2800
+F 0 "R9" V 2393 2800 50  0000 C CNN
+F 1 "5K1" V 2484 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2800 50  0001 C CNN
+F 3 "~" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 2700 1650 2700
+Wire Wire Line
+	1650 2800 2450 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5E9569BE
+P 3200 3400
+F 0 "#PWR?" H 3200 3150 50  0001 C CNN
+F 1 "GND" H 3205 3227 50  0000 C CNN
+F 2 "" H 3200 3400 50  0001 C CNN
+F 3 "" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2700 3200 2700
+Wire Wire Line
+	3200 2700 3200 2800
+Connection ~ 3200 2800
+Wire Wire Line
+	3200 2800 3200 3400
+Wire Wire Line
+	2750 2800 3200 2800
+Wire Wire Line
+	2000 3000 2450 3000
+Wire Wire Line
+	2450 3300 2450 3750
+Wire Wire Line
+	2150 3600 2150 3750
 $EndSCHEMATC
